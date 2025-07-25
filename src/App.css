@@ -1,0 +1,258 @@
+@import "tailwindcss";
+@layer utilities {
+   @keyframes shine {
+      0% {
+         background-position: 100%;
+      }
+      100% {
+         background-position: -100%;
+      }
+   }
+   .animate-shine {
+      animation: shine 5s linear infinite;
+   }
+   .bg-primary {
+      background-color: #050816;
+   }
+   .text-secondary {
+      color: #aaa6c3;
+   }
+   .bg-tertiary {
+      background-color: #151030;
+   }
+   .bg-black-100 {
+      background-color: #100d25;
+   }
+   .bg-black-200 {
+      background-color: #090325;
+   }
+   .text-white-100 {
+      color: #f3f3f3;
+   }
+   
+}
+
+html {
+   scroll-behavior: smooth;
+}
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
+
+.bg-text {
+   background: linear-gradient(135deg, #a95bf1, #983dec, #3f86f7);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+   font-weight: bold;
+}
+.bg-gradient-main{
+   background: linear-gradient(135deg, #a95bf1, #983dec, #3f86f7);
+}
+@keyframes glowLoop {
+   0%, 100% {
+      filter: drop-shadow(0px 5px 30px #3f86f7);
+   }
+   50% {
+      filter: drop-shadow(0px 5px 50px #a95bf1ec);
+   }
+}
+
+.drop_profile {
+   animation: glowLoop 1.8s ease-in-out infinite;
+}
+.item_nav {
+   position: relative;
+   display: inline-block;
+   color: #fff;
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.item_nav::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   height: 2px;
+   width: 0;
+   background: linear-gradient(135deg, #a95bf1, #983dec, #3f86f7);
+   transition: width 0.3s ease;
+}
+
+/* Hover hoặc active thì hiển thị viền */
+.item_nav:hover::after,
+.item_nav.active::after {
+   width: 100%;
+}
+
+/* Màu chữ khi active */
+.item_nav:hover {
+   background: linear-gradient(135deg, #a95bf1, #983dec, #3f86f7);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+.item_nav.active {
+   background: linear-gradient(135deg, #a95bf1, #983dec, #3f86f7);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   background-clip: text;
+}
+
+
+.text-color {
+   color: #f5eeeed2; 
+}
+
+.green-pink-gradient {
+   background: "#00cea8";
+   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+.violet-gradient {
+   background: #804dee;
+   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+   background: -webkit-linear-gradient(
+      -90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%
+   );
+}
+.bg-tertiary {
+   --tw-bg-opacity: 1;
+   background-color: rgb(21 16 48 / var(--tw-bg-opacity));
+}
+.shadow-card {
+   --tw-shadow: 0px 35px 120px -15px #211e35;
+   --tw-shadow-colored: 0px 35px 120px -15px var(--tw-shadow-color);
+   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.typewriter {
+   display: inline-block;
+   overflow: hidden;
+   white-space: nowrap;
+   border-right: 2px solid white;
+   animation: typing 3s infinite, blink-caret 1s step-end infinite;
+   width: 0;
+}
+
+@keyframes typing {
+   from {
+      width: 0;
+   }
+   to {
+      width: 18ch; /* hoặc dùng `100%` nếu bạn biết chính xác độ dài */
+   }
+}
+
+@keyframes blink-caret {
+   0%, 100% {
+      border-color: transparent;
+   }
+   50% {
+      border-color: white;
+   }
+}
+
+.black-gradient {
+   background: #000000; /* fallback for old browsers */
+   background: -webkit-linear-gradient(
+      to right,
+      #434343,
+      #000000
+   ); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      to right,
+      #434343,
+      #000000
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.violet-gradient {
+   background: #804dee;
+   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+   background: -webkit-linear-gradient(
+      -90deg,
+      #804dee 0%,
+      rgba(60, 51, 80, 0) 100%
+   );
+}
+
+.green-pink-gradient {
+   background: "#00cea8";
+   background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+}
+
+.orange-text-gradient {
+   background: #f12711; 
+   background: -webkit-linear-gradient(
+      to top,
+      #f12711,
+      #f5af19
+   ); 
+   background: linear-gradient(
+      to top,
+      #f12711,
+      #f5af19
+   );
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+   background: #11998e; 
+   background: -webkit-linear-gradient(
+      to top,
+      #11998e,
+      #38ef7d
+   ); 
+   background: linear-gradient(
+      to top,
+      #11998e,
+      #38ef7d
+   );    
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.blue-text-gradient {
+   background: #56ccf2; 
+   background: -webkit-linear-gradient(
+      to top,
+      #2f80ed,
+      #56ccf2
+   ); 
+   background: linear-gradient(
+      to top,
+      #2f80ed,
+      #56ccf2
+   ); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+   background: #ec008c; 
+   background: -webkit-linear-gradient(
+      to top,
+      #ec008c,
+      #fc6767
+   ); 
+   background: linear-gradient(
+      to top,
+      #ec008c,
+      #fc6767
+   ); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+
