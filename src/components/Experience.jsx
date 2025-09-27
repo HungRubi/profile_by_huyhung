@@ -2,8 +2,8 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
-
+import ShinyText from '../components/ShinyText';
+import BlurText from "../components/BlurText";
 import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "../utils/constants";
@@ -56,7 +56,23 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <div className='flex flex-col -mt-30'>
+      
+      <div className='flex flex-col'>
+        <div className="w-full mb-30 flex flex-col items-center" id="experience">
+        <ShinyText 
+            text="What I have done so far" 
+            disabled={false} 
+            speed={3} 
+            className='text-xl font-medium uppercase'
+        />
+        <BlurText
+            text="Work Experience"
+            delay={500}
+            animateBy="words"
+            direction="top"
+            className="text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px] capitalize"
+        />
+      </div>
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard

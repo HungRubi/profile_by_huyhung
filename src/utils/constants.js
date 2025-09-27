@@ -106,6 +106,19 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Intern Front-end Developer",
+    company_name: "Andin JSC",
+    icon: "/img/andin.jpg",
+    iconBg: "#383E56",
+    date: "February 2024 - May 2024",
+    points: [
+      "Joined as a Front-End Intern at Andin Trading JSC",
+      "Developed responsive user interfaces using React",
+      "Worked with designers to implement UI/UX for the company’s e-commerce platform",
+      "Assisted in integrating APIs and debugging UI components",
+    ],
+  },
+  {
     title: "Full-stack Developer",
     company_name: "Hybrid Elevator",
     icon: "/img/hybrid_elevator.png",
@@ -167,7 +180,7 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://vmu.com.vn/",
   },
   {
     name: "Admin Panel",
@@ -188,7 +201,7 @@ const projects = [
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://admin.vmu.com.vn/",
   },
   {
     name: "ZingMP3",
