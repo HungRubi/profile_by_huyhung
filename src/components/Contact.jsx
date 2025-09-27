@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { motion } from "framer-motion";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import EarthCanvas from "./Earth"
@@ -15,7 +15,7 @@ const Contact = () => {
     message: "",
   });
 
-//   const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { target } = e;
@@ -27,42 +27,42 @@ const Contact = () => {
     });
   };
 
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     setLoading(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
 
-//     emailjs
-//       .send(
-//         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-//         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-//         {
-//           from_name: form.name,
-//           to_name: "JavaScript Mastery",
-//           from_email: form.email,
-//           to_email: "sujata@jsmastery.pro",
-//           message: form.message,
-//         },
-//         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-//       )
-//       .then(
-//         () => {
-//           setLoading(false);
-//           alert("Thank you. I will get back to you as soon as possible.");
+    emailjs
+      .send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          name: form.name,
+          to_name: "JavaScript Mastery",
+          email: form.email,
+          to_email: "sujata@jsmastery.pro",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
 
-//           setForm({
-//             name: "",
-//             email: "",
-//             message: "",
-//           });
-//         },
-//         (error) => {
-//           setLoading(false);
-//           console.error(error);
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
 
-//           alert("Ahh, something went wrong. Please try again.");
-//         }
-//       );
-//   };
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
+  };
 
   return (
     <div
@@ -78,7 +78,7 @@ const Contact = () => {
 
         <form
           ref={formRef}
-        //   onSubmit={handleSubmit}
+          onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
           <label className='flex flex-col'>
@@ -119,8 +119,7 @@ const Contact = () => {
             type='submit'
             className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary cursor-pointer'
           >
-            Send
-            {/* {loading ? "Sending..." : "Send"} */}
+            {loading ? "Sending..." : "Send"}
           </button>
         </form>
       </motion.div>

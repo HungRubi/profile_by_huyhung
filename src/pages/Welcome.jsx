@@ -3,8 +3,7 @@ import { useState, useEffect, useCallback, memo } from 'react';
 import { Sparkles, ExternalLink, Mail, Github, Facebook, Instagram} from 'lucide-react';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Lanyard  from "../components/Lanyard"
-
+import ProfileCard from '../components/ProfileCard';
 const SocialLink = memo(({ icon: Icon, link }) => (
   <a href={link} target="_blank" rel="noopener noreferrer">
     <button className="group relative p-3">
@@ -189,7 +188,20 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className="w-1/2 flex items-center justify-center relative xs-w">
-                    
+                    <ProfileCard
+                        name="Ng H.Hung"
+                        title="Frontend Developer"
+                        handle="hungrubi"
+                        status="Online"
+                        contactText="Contact Me"
+                        avatarUrl="/img/me-remove.png"
+                        miniAvatarUrl="/img/me.jpg"
+                        showUserInfo={true}
+                        enableTilt={true}
+                        enableMobileTilt={false}
+                        onContactClick={() => console.log('Contact clicked')}
+                        className='object-cover h-full'
+                    />
                 </div>
             </div>
             <div className="xl:h-screen mx-auto -mt-50 sm:h-[500px] xs-h xs-mt-100 xs-mr-50">
