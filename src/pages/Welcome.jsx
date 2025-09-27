@@ -117,7 +117,7 @@ const Welcome = () => {
     return (
         <>
             <div className="w-full flex items-center relative px-[10%] h-screen xs-h-auto xs-px-10 xs-col pt-20 xs-pt-40" id='home'>
-                <div className="w-full "
+                <div className="xs-mt-100 row-2 justify-start"
                 data-aos="fade-right"
                 data-aos-delay="200">
                     <div className="space-y-4 sm:space-y-6">
@@ -187,7 +187,7 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 flex items-center justify-center relative xs-w">
+                <div className="w-1/2 flex items-center justify-end xs-center relative xs-w row-1">
                     <ProfileCard
                         name="Ng H.Hung"
                         title="Frontend Developer"
@@ -195,7 +195,7 @@ const Welcome = () => {
                         status="Online"
                         contactText="Contact Me"
                         avatarUrl="/img/me-remove.png"
-                        miniAvatarUrl="/img/me.jpg"
+                        miniAvatarUrl="/img/me.png"
                         showUserInfo={true}
                         enableTilt={true}
                         enableMobileTilt={false}

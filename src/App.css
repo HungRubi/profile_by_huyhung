@@ -84,9 +84,12 @@ html {
    .xs-mr-50 {
       margin-right: 50px;
    }
-   .xs-none {
-      display: none;
-   }
+    .xs-none {
+        display: none;
+    }
+  .xs-center {
+    justify-content: center;
+  }
 }
 
 .animate-spin-slow {
