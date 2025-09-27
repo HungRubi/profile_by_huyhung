@@ -1,24 +1,3 @@
-import {
-  mobile,
-  backend,
-  creator,
-  web,
-  javascript,
-  html,
-  css,
-  reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
-  docker,
-  carrent,
-  jobit,
-  tripguide,
-} from "../assets";
-
 const navItem = [
   {
     text: "home",
@@ -41,66 +20,66 @@ const navItem = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: 'assets/web.png',
   },
   {
     title: "React Native Developer",
-    icon: mobile,
+    icon: 'assets/mobile.png',
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: 'assets/backend.png',
   },
   {
     title: "Content Creator",
-    icon: creator,
+    icon: 'assets/creator.png',
   },
 ];
 
 const technologies = [
   {
     name: "HTML 5",
-    icon: html,
+    icon: 'assets/tech/html.png',
   },
   {
     name: "CSS 3",
-    icon: css,
+    icon: 'assets/tech/css.png',
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: 'assets/tech/javascript.png',
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: 'assets/tech/reactjs.png',
   },
   {
     name: "Redux Toolkit",
-    icon: redux,
+    icon: 'assets/tech/redux.png',
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: 'assets/tech/tailwind.png',
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: 'assets/tech/nodejs.png',
   },
   {
     name: "MongoDB",
-    icon: mongodb,
+    icon: 'assets/tech/mongodb.png',
   },
   {
     name: "git",
-    icon: git,
+    icon: 'assets/tech/git.png',
   },
   {
     name: "figma",
-    icon: figma,
+    icon: 'assets/tech/figma.png',
   },
   {
     name: "docker",
-    icon: docker,
+    icon: 'assets/tech/docker.png',
   },
 ];
 
@@ -108,7 +87,7 @@ const experiences = [
   {
     title: "Intern Front-end Developer",
     company_name: "Andin JSC",
-    icon: "/img/andin.jpg",
+    icon: 'img/andin.jpg',
     iconBg: "#383E56",
     date: "February 2024 - May 2024",
     points: [
@@ -121,7 +100,7 @@ const experiences = [
   {
     title: "Full-stack Developer",
     company_name: "Hybrid Elevator",
-    icon: "/img/hybrid_elevator.png",
+    icon: 'img/hybrid_elevator.png',
     iconBg: "#383E56",
     date: "December 2024 - May 2025",
     points: [
@@ -179,7 +158,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: 'assets/carrent.png',
     source_code_link: "https://vmu.com.vn/",
   },
   {
@@ -200,7 +179,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: 'assets/jobit.png',
     source_code_link: "https://admin.vmu.com.vn/",
   },
   {
@@ -221,7 +200,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: 'assets/tripguide.png',
     source_code_link: "https://github.com/",
   },
 ];

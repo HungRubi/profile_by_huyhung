@@ -3,7 +3,6 @@ import Tilt from 'react-parallax-tilt';
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
 import  SectionWrapper  from "../utils/SectionWrapper";
 
 import { projects } from "../utils/constants";
@@ -40,7 +39,7 @@ const ProjectCard = ({
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
               <img
-                src={github}
+                src='/assets/github.png'
                 alt='source code'
                 className='w-1/2 h-1/2 object-contain'
               />
