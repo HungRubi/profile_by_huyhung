@@ -187,7 +187,9 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-1/2 flex items-center justify-end xs-center relative xs-w row-1">
+                <div className="w-1/2 flex items-center justify-end xs-center relative xs-w row-1" 
+                data-aos="fade-left"
+                data-aos-delay="200">
                     <ProfileCard
                         name="Ng H.Hung"
                         title="Frontend Developer"
