@@ -201,7 +201,28 @@ const projects = [
       },
     ],
     image: 'assets/tripguide.png',
-    source_code_link: "https://github.com/",
+    source_code_link: "https://zingmp3.vmu.com.vn/",
+  },
+  {
+    name: "ZingMP3 Dashboard",
+    description:
+      "Manage songs, playlists, artists, albums, and user interactions on the ZingMP3 music streaming platform, ensuring a seamless and efficient content management experience.",
+    tags: [
+      {
+        name: "handlebars",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: 'assets/admin_zing.jpg',
+    source_code_link: "https://zingsv.vmu.com.vn/",
   },
 ];
 
